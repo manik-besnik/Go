@@ -17,4 +17,18 @@ func main() {
 	for key, value := range person {
 		fmt.Printf("%s: %s\n", key, value)
 	}
+
+	learnDataTypes()
+}
+
+func learnDataTypes() {
+	var x int = 30
+
+	fmt.Println(x)
+
+	var arr [3]int = [3]int{1, 2, 3}
+
+	for index, value := range arr {
+		fmt.Printf("Index:%d and value %d \n", index, value)
+	}
 }
