@@ -47,6 +47,105 @@
 
 ---
 
+# 🗓️ Go Learning Routine - Weeks 2, 3 & 4
+
+---
+
+## 📅 **Week 2 - Building a REST API (Intermediate)**
+
+### **Day 8 - Middleware**
+- Build a simple logging middleware
+- Learn about `http.Handler` and chaining middleware
+
+### **Day 9 - CRUD - Create & Read**
+- Create `POST` endpoint to insert data into DB
+- Create `GET` endpoint to fetch single/multiple records
+
+### **Day 10 - CRUD - Update & Delete**
+- Implement `PUT` (update) and `DELETE` handlers
+
+### **Day 11 - Models & Validation**
+- Create a `User` or `Task` struct as your model
+- Add basic validation (e.g., check for empty fields)
+
+### **Day 12 - Environment Variables**
+- Load config (DB creds, ports) using `os.Getenv` or a `.env` loader package like `joho/godotenv`
+
+### **Day 13 - Refactor Handlers**
+- Organize your project:
+  - `/handlers`
+  - `/models`
+  - `/routes`
+  - `/main.go`
+
+### **Day 14 - Error Handling**
+- Centralize error handling
+- Return JSON error responses with proper HTTP status codes
+
+---
+
+## 📅 **Week 3 - Advanced API & Testing**
+
+### **Day 15 - Dependency Injection**
+- Pass DB connection to handlers
+- Learn how to keep handlers testable
+
+### **Day 16 - JSON Marshalling/Unmarshalling**
+- Learn how to decode incoming JSON (`json.NewDecoder`)
+- Encode responses using `json.Marshal`
+
+### **Day 17 - Custom Response Structs**
+- Create a standardized API response (e.g., `{ "data": ..., "message": ..., "error": ... }`)
+
+### **Day 18 - Authentication (JWT)**
+- Use a JWT package (e.g., `github.com/golang-jwt/jwt`)
+- Implement a simple login route with token generation
+
+### **Day 19 - Protect Routes (Auth Middleware)**
+- Middleware to validate JWTs and protect certain endpoints
+
+### **Day 20 - Unit Testing Basics**
+- Write unit tests using Go's built-in `testing` package
+- Test simple functions and handlers
+
+### **Day 21 - API Testing**
+- Write API tests with `net/http/httptest`
+
+---
+
+## 📅 **Week 4 - Final Touches & Extra**
+
+### **Day 22 - Logging**
+- Add structured logging with `log` or `logrus`
+
+### **Day 23 - Pagination**
+- Implement basic pagination logic in your `GET` endpoints
+
+### **Day 24 - Dockerize the App**
+- Create a `Dockerfile` to containerize your Go app
+
+### **Day 25 - Graceful Shutdown**
+- Handle `SIGINT` and gracefully shut down your HTTP server
+
+### **Day 26 - CLI Tool Bonus**
+- Build a simple CLI utility with Go's `flag` package
+
+### **Day 27 - Go Routines Refresher**
+- Revisit Go routines with a real-world example (e.g., background job)
+
+### **Day 28 - Deployment**
+- Deploy your app to a VPS or cloud platform (e.g., Render, DigitalOcean, Fly.io)
+
+---
+
+## ✅ **End Goal**
+- By the end of Week 4, you’ll have:
+  - A production-ready REST API or microservice
+  - Working knowledge of Go best practices
+  - Intro to Go testing, concurrency, and deployment
+
+---
+
 ## ⏰ Pro Tip
 - Stay consistent, even **10 mins/day** is enough!
 - Use the official docs: [https://go.dev/doc](https://go.dev/doc)
